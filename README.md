@@ -1,21 +1,20 @@
-# Abhishek Aryavart | Developer Portfolio
+# Abhishek Aryavart | Data Analyst & Developer Portfolio
 
-A professional, high-performance developer portfolio website designed for Abhishek Aryavart. Featuring a modern dark-theme, glassmorphism aesthetics, and smooth scroll animations.
+A professional, high-performance developer portfolio website for Abhishek Aryavart. Featuring a modern responsive design, a blue and yellow professional theme, and detailed showcases for Data Science and software development projects.
 
-## 🚀 Features
+## 🚀 Portfolio Preview
 
-- **Modern UI/UX**: Premium dark theme with vibrant teal and indigo accents.
-- **Glassmorphism**: Subtle glass-like effects on cards and navigation.
-- **Responsive**: Fully optimized for mobile, tablet, and desktop views.
-- **Smooth Animations**: Intersection Observer API used for fade-in animations on scroll.
-- **Fast Performance**: Built with vanilla HTML, CSS, and JS for maximum efficiency.
+- **Name**: Abhishek Aryavart
+- **Title**: Data Analyst | Python | Power BI | MySQL | Flask Developer
+- **Education**: MCA in Data Science
+- **Experience**: Building data analytics and software solutions.
 
 ## 📁 Project Structure
 
 ```text
 portfolio/
 ├── index.html          # Main landing page
-├── style.css           # Design system and animations
+├── style.css           # Blue/Yellow design system and animations
 ├── script.js           # Frontend interactivity
 ├── assets/             # Media and icons
 │   ├── images/
@@ -25,21 +24,32 @@ portfolio/
 └── README.md           # Documentation
 ```
 
-## 🛠️ Tech Stack
+## 🛠️ Technical Skills
 
-- **HTML5**: Semantic tags and structure.
-- **CSS3**: Custom variables, Flexbox/Grid, and glassmorphism.
-- **JavaScript**: Vanilla JS for animations and interactions.
-- **Google Fonts**: Inter & Outfit.
+- **Languages**: Python, C#
+- **Libraries/Tools**: Pandas, Power BI, Excel, Flask, Git & GitHub
+- **Databases**: MySQL, MongoDB
 
-## 🌐 Deployment to GitHub Pages
+## 📂 Project List
+
+- **School Billing Application**: .NET + MySQL.
+- **E-Learning Platform**: Flask + Python.
+- **Image Cataloguing System**: Python + MongoDB.
+- **Data Analysis Dashboard**: Power BI.
+
+## 🌐 Contact Information
+
+- **GitHub**: [github.com/abhishekaryavart](https://github.com/abhishekaryavart)
+- **LinkedIn**: [Abhishek Aryavart](#)
+- **Email**: [abhishek@example.com](mailto:abhishek@example.com)
+
+## 🌎 Deployment to GitHub Pages
 
 To deploy this portfolio to GitHub Pages:
 
-1. **Create a Repository**: Name it `abhishekaryavart.github.io`.
-2. **Upload Files**: Push all contents of the `portfolio/` folder to the repository's `main` branch.
-3. **Wait for Build**: GitHub Pages will automatically build and deploy your site.
-4. **Access Website**: Visit `https://abhishekaryavart.github.io` to see your professional portfolio live!
+1. Create a repository named `abhishekaryavart.github.io`.
+2. Push the contents of the `portfolio/` folder to the repository's `main` branch.
+3. Access your site at `https://abhishekaryavart.github.io`.
 
 ---
-Developed with ❤️ by Abhishek Aryavart.
+Managed with ❤️ by Abhishek Aryavart.
