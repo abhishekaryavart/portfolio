@@ -4,25 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Aryavart | Data Analyst & Developer</title>
+    <title>Abhishek Aryavart | Data Analyst & Software Developer</title>
     <meta name="description"
-        content="Professional portfolio of Abhishek Aryavart, Data Analyst and Developer specializing in Python, Power BI, and Full-Stack development.">
+        content="Professional portfolio of Abhishek Aryavart, specialized in Data Science, Python, Power BI, and Software Development.">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@300;600;800&display=swap"
-        rel="stylesheet">
+    <!-- Meta for Theme -->
+    <meta name="theme-color" content="#1c4c94">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Animated background layers -->
+    <div class="bg-animated"></div>
+
     <header id="header">
         <nav>
-            <div class="logo">Abhishek Aryavart</div>
+            <div class="logo">Abhishek <span style="color: var(--accent-yellow)">Aryavart</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -34,101 +33,226 @@
     </header>
 
     <main>
-        <!-- Home Section -->
+        <!-- Section 1: Hero -->
         <section id="home" class="hero">
-            <h1 class="animate">Abhishek Aryavart</h1>
-            <h2 class="animate">Data Analyst | Python | Power BI | MySQL | Flask Developer</h2>
-            <div class="hero-btns animate">
-                <a href="#projects" class="btn-primary">View Projects</a>
-                <a href="#contact" class="btn-secondary" style="margin-left: 1rem;">Contact Me</a>
+            <div class="hero-content animate-in">
+                <h1>Abhishek Aryavart</h1>
+                <h2>Data Analyst & Software Developer</h2>
+                <p style="margin-bottom: 2.5rem; color: var(--text-muted); font-size: 1.1rem; max-width: 550px;">
+                    Transforming raw data into actionable insights and building high-performance software solutions with
+                    a focus on Data Science and modern web technologies.
+                </p>
+                <div class="btn-container">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#" class="btn btn-secondary">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-img animate-in">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+                    alt="Abhishek Aryavart Profile">
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- Section 2: About Me -->
         <section id="about">
-            <h2 class="animate">About Me</h2>
-            <div class="card animate" style="margin-top: 2rem;">
-                <p style="font-size: 1.2rem; margin-bottom: 1.5rem;"><strong>MCA in Data Science</strong></p>
-                <p>I am a passionate professional with experience building data analytics and software solutions. My
-                    expertise lies in transforming complex data into actionable insights and developing robust web
-                    applications.</p>
-                <p style="margin-top: 1rem;">Skilled in Python, Pandas, Power BI, Excel, MySQL, Flask, C#, and MongoDB,
-                    I bridge the gap between data engineering and business intelligence.</p>
+            <div class="glass animate-in" style="padding: 4rem;">
+                <h2 style="margin-bottom: 2rem;">About Me</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 1.5rem; font-weight: 500; color: var(--primary-blue);">MCA
+                    In Data Science</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <div>
+                        <p>I am a dedicated professional with a strong foundation in Data Analytics and software
+                            engineering. My journey is driven by a passion for solving complex problems using
+                            data-driven approaches and elegant code.</p>
+                        <p style="margin-top: 1.5rem;">With an MCA in Data Science, I specialize in bridging the gap
+                            between statistical analysis and practical software implementation.</p>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 1rem;">Career Objective</h4>
+                        <p>To leverage my technical expertise in Python, Data Science, and Full-Stack development to
+                            contribute to innovative projects that make a real-world impact.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Section 3: Skills -->
         <section id="skills">
-            <h2 class="animate">Technical Skills</h2>
+            <h2 class="animate-in" style="text-align: center; margin-bottom: 1rem;">Expertise & Skills</h2>
+            <p class="animate-in" style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">A
+                comprehensive toolkit for data analysis and development.</p>
+
             <div class="skills-grid">
-                <div class="skill-tag animate">Python</div>
-                <div class="skill-tag animate">Pandas</div>
-                <div class="skill-tag animate">Power BI</div>
-                <div class="skill-tag animate">MySQL</div>
-                <div class="skill-tag animate">Excel</div>
-                <div class="skill-tag animate">Flask</div>
-                <div class="skill-tag animate">C#</div>
-                <div class="skill-tag animate">MongoDB</div>
-                <div class="skill-tag animate">Git & GitHub</div>
+                <div class="skill-card glass animate-in">
+                    <h3>Python</h3>
+                    <p>Core programming & Automation</p>
+                </div>
+                <div class="skill-card glass animate-in" style="border-bottom: 4px solid var(--accent-yellow);">
+                    <h3>Data Analysis</h3>
+                    <p>Pandas, Numpy & Insights</p>
+                </div>
+                <div class="skill-card glass animate-in">
+                    <h3>Power BI</h3>
+                    <p>Interactive Visualizations</p>
+                </div>
+                <div class="skill-card glass animate-in">
+                    <h3>MySQL</h3>
+                    <p>Database Management & SQL</p>
+                </div>
+                <div class="skill-card glass animate-in">
+                    <h3>Flask</h3>
+                    <p>Web Frameworks & APIs</p>
+                </div>
+                <div class="skill-card glass animate-in">
+                    <h3>C#</h3>
+                    <p>.NET Development</p>
+                </div>
+                <div class="skill-card glass animate-in">
+                    <h3>MongoDB</h3>
+                    <p>NoSQL Database Solutions</p>
+                </div>
+                <div class="skill-card glass animate-in">
+                    <h3>Git & GitHub</h3>
+                    <p>Version Control & Collaboration</p>
+                </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Section 4: Projects -->
         <section id="projects">
-            <h2 class="animate">Featured Projects</h2>
+            <h2 class="animate-in" style="margin-bottom: 1rem;">Featured Projects</h2>
+            <p class="animate-in" style="color: var(--text-muted); margin-bottom: 4rem;">Showcasing my technical
+                capabilities through real-world applications.</p>
+
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="card animate">
-                    <h3>School Billing Application</h3>
-                    <p class="text-accent" style="margin-bottom: 1rem; font-weight: 600;">.NET + MySQL</p>
-                    <p>A comprehensive billing and management system designed for educational institutions, streamlining
-                        fee collection and record-keeping.</p>
+                <div class="project-card glass animate-in">
+                    <div>
+                        <h3>School Billing App</h3>
+                        <p>A high-performance desktop application for managing school fees and financial records.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">C#</span>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="#" class="btn btn-primary"
+                            style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">GitHub</a>
+                        <a href="#" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Live
+                            Demo</a>
+                    </div>
                 </div>
+
                 <!-- Project 2 -->
-                <div class="card animate">
-                    <h3>E-Learning Platform</h3>
-                    <p class="text-accent" style="margin-bottom: 1rem; font-weight: 600;">Flask + Python</p>
-                    <p>An interactive online learning system with course management, student progress tracking, and
-                        secure authentication.</p>
+                <div class="project-card glass animate-in">
+                    <div>
+                        <h3>E-Learning Platform</h3>
+                        <p>Scalable web platform featuring course delivery and student progress analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="#" class="btn btn-primary"
+                            style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">GitHub</a>
+                    </div>
                 </div>
+
                 <!-- Project 3 -->
-                <div class="card animate">
-                    <h3>Image Cataloguing System</h3>
-                    <p class="text-accent" style="margin-bottom: 1rem; font-weight: 600;">Python + MongoDB</p>
-                    <p>A high-performance system for organizing and retrieving large image datasets using efficient
-                        NoSQL indexing.</p>
+                <div class="project-card glass animate-in">
+                    <div>
+                        <h3>Image Catalog System</h3>
+                        <p>Intelligent image indexing and storage system optimized for large-scale media assets.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="#" class="btn btn-primary"
+                            style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">GitHub</a>
+                    </div>
                 </div>
+
                 <!-- Project 4 -->
-                <div class="card animate">
-                    <h3>Data Analysis Dashboard</h3>
-                    <p class="text-accent" style="margin-bottom: 1rem; font-weight: 600;">Power BI</p>
-                    <p>Dynamic and interactive business intelligence dashboards visualizing key performance indicators
-                        and market trends.</p>
+                <div class="project-card glass animate-in">
+                    <div>
+                        <h3>Data Analysis Dashboard</h3>
+                        <p>Strategic business intelligence dashboard visualizing complex data for decision makers.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">Excel</span>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="#" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View
+                            Insights</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="animate">Contact</h2>
-            <div class="card animate" style="margin-top: 2rem; text-align: center;">
-                <p style="margin-bottom: 2.5rem;">I'm currently open to new opportunities and collaborations. Feel free
-                    to reach out!</p>
-                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
-                    <a href="mailto:abhishek@example.com" class="text-accent" style="font-weight: 600;">Email</a>
-                    <a href="https://github.com/abhishekaryavart" class="text-accent"
-                        style="font-weight: 600;">GitHub</a>
-                    <a href="#" class="text-accent" style="font-weight: 600;">LinkedIn</a>
+        <!-- Section 5: Experience / Learning -->
+        <section id="experience">
+            <h2 class="animate-in" style="margin-bottom: 4rem;">Experience & Learning</h2>
+            <div class="exp-container">
+                <div class="exp-item glass animate-in">
+                    <div style="font-size: 2rem;">☁️</div>
+                    <div>
+                        <h3>AWS Data Engineering</h3>
+                        <p>Specialized training in cloud data architecture and pipelines using Amazon Web Services.</p>
+                    </div>
                 </div>
-                <a href="#" class="btn-primary">Download Resume</a>
+                <div class="exp-item glass animate-in">
+                    <div style="font-size: 2rem;">📊</div>
+                    <div>
+                        <h3>Data Analytics Practice</h3>
+                        <p>Consistent application of statistical methods to solve real-world business challenges.</p>
+                    </div>
+                </div>
+                <div class="exp-item glass animate-in">
+                    <div style="font-size: 2rem;">💻</div>
+                    <div>
+                        <h3>Problem Solving</h3>
+                        <p>Daily dedication to mastering Data Structures and Algorithms for optimized software
+                            development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Contact -->
+        <section id="contact">
+            <h2 class="animate-in">Get In Touch</h2>
+            <div class="contact-container glass animate-in" style="padding: 4rem;">
+                <div class="contact-info">
+                    <p style="margin-bottom: 2rem;">I am always open to discussing new projects, creative ideas, or
+                        opportunities to be part of your vision.</p>
+                    <a href="mailto:abhishek@example.com">📧 abhishek@example.com</a>
+                    <a href="https://github.com/abhishekaryavart">📂 GitHub Profile</a>
+                    <a href="#">🔗 LinkedIn Connection</a>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer
-        style="padding: 4rem 2rem; text-align: center; border-top: 1px solid var(--border-color); color: var(--text-secondary);">
-        <p>&copy;
-            <script>document.write(new Date().getFullYear())</script> Abhishek Aryavart. All rights reserved.
+    <!-- Section 7: Footer -->
+    <footer style="padding: 4rem 2rem; background: var(--text-dark); color: white; text-align: center;">
+        <div style="margin-bottom: 2rem;">
+            <p>Designed by <span style="color: var(--accent-yellow); font-weight: 700;">Abhishek Aryavart</span></p>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy;
+            <script>document.write(new Date().getFullYear())</script> All Rights Reserved.
         </p>
     </footer>
 
