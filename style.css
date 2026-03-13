@@ -952,6 +952,42 @@ a {
     background: rgba(0, 195, 255, 0.05);
 }
 
+/* Form Message */
+.form-message {
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideUp 0.4s ease;
+}
+
+.form-message.success {
+    background: rgba(0, 195, 255, 0.1);
+    color: var(--glow-blue);
+    border: 2px solid var(--glow-blue);
+}
+
+.form-message.error {
+    background: rgba(255, 77, 166, 0.1);
+    color: var(--accent-pink);
+    border: 2px solid var(--accent-pink);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Footer */
 .footer {
     background: linear-gradient(135deg, rgba(7, 24, 46, 0.8), rgba(7, 24, 46, 0.6));

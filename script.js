@@ -187,16 +187,17 @@ function initScrollAnimations() {
     progressBars.forEach(bar => progressObserver.observe(bar));
 }
 
-// ============ Form Handling ============
+// ============ Form Handling with Formspree ============
 function initFormHandling() {
     const contactForm = document.getElementById('contactForm');
     if (!contactForm) return;
 
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         const formInputs = contactForm.querySelectorAll('.form-input');
         const submitBtn = contactForm.querySelector('button');
+        const messageDiv = document.getElementById('formMessage');
         const originalText = submitBtn.textContent;
 
         // Validate form
@@ -212,32 +213,68 @@ function initFormHandling() {
 
         if (!isValid) {
             showNotification('Please fill all fields', 'error');
+            messageDiv.textContent = 'Please fill all required fields';
+            messageDiv.className = 'form-message error';
             return;
         }
 
-        // Simulate sending
+        // Show loading state
         submitBtn.disabled = true;
         submitBtn.textContent = 'Sending...';
+        messageDiv.textContent = '';
+        messageDiv.className = 'form-message';
 
-        setTimeout(() => {
-            submitBtn.textContent = 'Message Sent! ✓';
-            submitBtn.style.background = 'linear-gradient(135deg, #00c3ff, #ff4da6)';
+        // Prepare form data
+        const formData = new FormData(contactForm);
+
+        try {
+            // Use Formspree endpoint - Replace YOUR_FORM_ID with your actual Formspree form ID
+            // To create a form: 1. Go to formspree.io 2. Create new form 3. Copy the form ID
+            const formId = 'xyzabc'; // THIS NEEDS TO BE REPLACED BY USER
             
-            // Reset form
-            contactForm.reset();
-            formInputs.forEach(input => {
-                input.style.borderColor = 'rgba(0, 195, 255, 0.2)';
+            const response = await fetch(`https://formspree.io/f/${formId}`, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
             });
 
-            // Reset button after delay
-            setTimeout(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.style.background = '';
-                submitBtn.disabled = false;
-            }, 3000);
+            if (response.ok) {
+                // Success
+                submitBtn.textContent = 'Message Sent! ✓';
+                messageDiv.textContent = 'Thank you! Your message has been sent successfully. I\'ll get back to you soon.';
+                messageDiv.className = 'form-message success';
+                
+                // Reset form
+                contactForm.reset();
+                formInputs.forEach(input => {
+                    input.style.borderColor = 'rgba(0, 195, 255, 0.2)';
+                });
 
-            showNotification('Message sent successfully!', 'success');
-        }, 1500);
+                showNotification('Message sent successfully!', 'success');
+
+                // Reset button after delay
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    messageDiv.textContent = '';
+                    messageDiv.className = 'form-message';
+                }, 4000);
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            
+            // Error handling
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            messageDiv.textContent = 'Error sending message. Please try again or contact me directly via email.';
+            messageDiv.className = 'form-message error';
+            
+            showNotification('Error sending message. Please try again.', 'error');
+        }
     });
 }
 
